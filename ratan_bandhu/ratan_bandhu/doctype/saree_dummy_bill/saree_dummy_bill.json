@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EnquiryCode-.DD.MM.YY.-.#####",
+ "creation": "2026-09-14 13:14:41.929188",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "saree_dummy_bill_section",
+  "customer",
+  "supplier",
+  "customer_interest",
+  "saree_design",
+  "rate",
+  "quantity",
+  "amount",
+  "status",
+  "actual_bill",
+  "link_documents_section",
+  "sales_order",
+  "sales_invoice",
+  "column_break_gfhn",
+  "purchase_order",
+  "purchase_invoice"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "customer_interest",
+   "fieldtype": "Link",
+   "label": "Customer Interest",
+   "options": "Customer Saree Interest"
+  },
+  {
+   "fieldname": "saree_design",
+   "fieldtype": "Link",
+   "label": "Saree Design",
+   "options": "Item"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "default": "1",
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nBill Created\nCancelled"
+  },
+  {
+   "fieldname": "actual_bill",
+   "fieldtype": "Link",
+   "label": "Actual Bill",
+   "options": "Sales Invoice"
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Link",
+   "label": "Purchase Invoice",
+   "options": "Sales Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "saree_dummy_bill_section",
+   "fieldtype": "Section Break",
+   "label": "Saree Dummy Bill"
+  },
+  {
+   "fieldname": "link_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Transaction Documents"
+  },
+  {
+   "fieldname": "column_break_gfhn",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-20 21:48:30.215870",
+ "modified_by": "mstripathi100@gmail.com",
+ "module": "ratan bandhu",
+ "name": "Saree Dummy Bill",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
